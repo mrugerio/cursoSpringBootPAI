@@ -6,20 +6,21 @@ public class Principal {
 		
 		Mouse mouse = new Mouse();
 
-		Texto txt = new Texto("Hello World");
-		Imagen img = new Imagen("Duck");
+		new Texto("Hello World",mouse);
+		new Imagen("Duck",mouse);
 
-		mouse.attach(txt);
-		mouse.attach(img);
-		
 		mouse.click();
 		
 		System.out.println("----------------");
-		
-		mouse.detach(txt);
-		mouse.attach(new Gif("Gif"));
-		mouse.click();
+				
+		new Gif("Gif",mouse);
 
+		mouse.click();
+		
+		System.out.println("----------------");
+
+		new Texto("Hola Mundo",mouse);
+		mouse.click();
 	}
 
 }

@@ -4,7 +4,8 @@ public class Texto extends Observer {
 	
 	private String texto;
 
-	public Texto(String texto) {
+	public Texto(String texto, Subject subject) {
+		super(subject);
 		this.texto = texto;
 	}
 	
