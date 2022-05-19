@@ -7,8 +7,9 @@ public class Principal {
 		System.out.println("Observer V2");
 	
 		Mouse mouse = new Mouse();
+		String param = "Hello World";
 		
-		new Texto("Hello World",mouse);
+		new Texto(param,mouse);
 		new Imagen("Duck",mouse);
 		
 		mouse.click();

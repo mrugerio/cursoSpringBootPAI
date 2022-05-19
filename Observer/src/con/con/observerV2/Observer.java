@@ -6,7 +6,7 @@ public abstract class Observer {
 	
 	public Observer(Subject subject) {
 		this.subject = subject;
-		subject.attach(this);
+		this.subject.attach(this);
 	}
 
 	abstract void update();
