@@ -1,11 +1,10 @@
-package con.con.observerV2;
+package con.curso.observerV1;
 
 public class Gif extends Observer {
 	
 	private String gif;
 
-	public Gif(String gif, Subject subject) {
-		super(subject);
+	public Gif(String gif) {
 		this.gif = gif;
 	}
 	

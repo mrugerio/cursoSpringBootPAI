@@ -1,4 +1,4 @@
-package con.con.observerV2;
+package con.curso.observerV2;
 
 public class Mouse extends Subject {
 	

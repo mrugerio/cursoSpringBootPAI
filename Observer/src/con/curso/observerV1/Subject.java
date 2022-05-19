@@ -1,10 +1,14 @@
-package con.con.observerV2;
+package con.curso.observerV1;
 
 import java.util.*;
 
 public abstract class Subject {
 	
-	List<Observer> listaObservadores = new ArrayList<>();
+	List<Observer> listaObservadores;
+	
+	Subject(){
+		listaObservadores = new ArrayList();
+	}
 	
 	void attach(Observer o) {
 		listaObservadores.add(o);

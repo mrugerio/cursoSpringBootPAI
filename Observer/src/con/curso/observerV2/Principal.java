@@ -1,4 +1,4 @@
-package con.con.observerV2;
+package con.curso.observerV2;
 
 public class Principal {
 
@@ -10,7 +10,7 @@ public class Principal {
 		String param = "Hello World";
 		
 		new Texto(param,mouse);
-		new Imagen("Duck",mouse);
+		//new Imagen("Duck",mouse);
 		
 		mouse.click();
 		

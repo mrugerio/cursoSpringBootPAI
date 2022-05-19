@@ -1,11 +1,10 @@
-package con.con.observerV2;
+package con.curso.observerV1;
 
 public class Imagen extends Observer {
 	
 	private String img;
 
-	public Imagen(String img, Subject subject) {
-		super(subject);
+	public Imagen(String img) {
 		this.img = img;
 	}
 	

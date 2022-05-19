@@ -1,4 +1,4 @@
-package con.con.observerV1;
+package con.curso.observerV1;
 
 public class Principal {
 
