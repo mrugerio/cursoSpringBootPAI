@@ -10,7 +10,9 @@ public class Principal {
 		String param = "Hello World";
 		
 		new Texto(param,mouse);
-		//new Imagen("Duck",mouse);
+		new Imagen("Duck",mouse);
+		
+		mouse.attach(new Gif("Gif",mouse));
 		
 		mouse.click();
 		
