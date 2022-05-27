@@ -31,3 +31,12 @@ InicioCurso/.settings/org.eclipse.jdt.core.prefs
 Observer/.classpath
 Observer/.project
 Observer/.settings/org.eclipse.jdt.core.prefs
+MethodRefClassMethStat/.classpath
+MethodRefClassMethStat/.project
+*.prefs
+MethodRefClassNew/.classpath
+MethodRefClassNew/.project
+MethodRefObjMethIns/.classpath
+MethodRefObjMethIns/.project
+OoVsFunctional/.classpath
+OoVsFunctional/.project
