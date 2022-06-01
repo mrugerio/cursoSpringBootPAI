@@ -8,10 +8,10 @@ public class Principal {
 		Carro instanciaCarro = new Carro();
 		instanciaCarro.id = 5;
 		
-		//Consumer<Carro> c = x -> instanciaMecanico.arreglar(x);
+		//BiConsumer<Mecanico,Carro> biConsumer = (m,c) -> m.arreglar(c);
 		
-		Consumer<Carro> c = instanciaMecanico::arreglar;
-		c.accept(instanciaCarro);	
+		BiConsumer<Mecanico,Carro> biConsumer = Mecanico::arreglar;
+		biConsumer.accept(instanciaMecanico,instanciaCarro);	
 	}	
 }
 

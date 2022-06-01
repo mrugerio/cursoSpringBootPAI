@@ -35,7 +35,9 @@ public class Principal2 {
 		ventaslista.add(mica08);
 		ventaslista.add(mica09);
 		
-		Map<String,Long> micasDetCantidad= ventaslista.stream().collect(Collectors.groupingBy(x->x.getUnidadHor()+ "/" + x.getUnidadVer(), Collectors.summingLong(Mica::getCantidadVendida)));
+		Map<String,Long> micasDetCantidad= ventaslista.stream().collect
+				(Collectors.groupingBy(x->x.getUnidadHor()+ "/" + x.getUnidadVer(), 
+				Collectors.summingLong(Mica::getCantidadVendida)));
 		
 		micasDetCantidad.forEach((x,y)-> System.out.println("Cantidad total " + x + ": "+ y));
 	}

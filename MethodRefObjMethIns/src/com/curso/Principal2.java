@@ -9,10 +9,10 @@ public class Principal2 {
 		
 		//Function<String,Integer> f = s -> p.getCantLetras(s);
 		
-		//Function<String,Integer> f = p::getCantLetras;
-		ToIntFunction<String> f = p::getCantLetras;
+		Function<String,Integer> f = p::getCantLetras;
+		//ToIntFunction<String> f = p::getCantLetras;
 		
-		System.out.println(f.applyAsInt("Hola"));
+		System.out.println(f.apply("Hola"));
 		
 		BiPredicate<Integer,Integer> bp = p::esMayor10;
 		System.out.println(bp.test(4, 8));
